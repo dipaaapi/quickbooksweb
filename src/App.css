@@ -1,0 +1,37 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.root {
+    height: 100vh;
+}
+
+.app-main {
+    height: 100vh;
+
+    /* layout */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app-main .card-main {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card-main:hover {
+    background-color: mediumturquoise;
+    color:whitesmoke;
+    transition-delay: .2s;
+    border: 1px solid mediumturquoise;
+}

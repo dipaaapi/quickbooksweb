@@ -1,30 +1,18 @@
-import React, { useState } from "react";
-import { info } from "./Info";
+import React from "react";
+// component
+import Card from "./Card";
+// style
+import './App.css';
 
 const App = () => {
-
-    const [count, setCount] = useState(0)
-    const [user, setUser] = useState('')
-
-    const adding = () => {
-        setCount(count + 1)
-    }
-
-    const handleOnChange = (e) => {
-        setUser(e.target.value)
-        // console.log("e: ", e.target.value)
-        console.log("user: ", user)
-    }
-
     return (
-        <React.Fragment>
-            <p>Hello {info.fname}</p>
-            <br />
-            <p>{count}</p>
-            <button id="add" onClick={adding}>add</button>
-            <br />
-            <input name="user" onChange={handleOnChange} value={user} />
-        </React.Fragment>
+        <div className="app-main">
+            <Card name="John Edward" age={33} gender="male" position="Web Developer" />
+            <Card name="Edward" age={33} gender="male" position="UI Designer" />
+            <Card name="John" age={33} gender="male" position="Quality Assurance" />
+            <Card name="Ed" age={33} gender="male" position="Graphic Artist" />
+            <Card name="Janjan" age={33} gender="male" position="Computer Technician" />
+        </div>
     )
 }
 
