@@ -16,6 +16,16 @@ html, body {
     align-items: center;
 }
 
+.card-main {
+    padding: 1em;
+}
+
+.title-main {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .app-main .card-main {
     border: 1px solid black;
     height: 200px;
@@ -34,4 +44,36 @@ html, body {
     color:whitesmoke;
     transition-delay: .2s;
     border: 1px solid mediumturquoise;
+}
+.card-data {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: .5vh;
+    cursor: pointer;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.card-data:hover {
+    background-color: whitesmoke;
+    color: mediumturquoise;
+    border-radius: 50vw;
+}
+.data-inner-left {
+    padding: 5px;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    font-weight: bold;
+}
+.data-inner-right {
+    padding: 5px;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: right;
+    font-weight: inherit;
+    text-transform: uppercase;
+    font-size: small;
 }
