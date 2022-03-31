@@ -1,17 +1,20 @@
+// imports
 import React from "react";
+import { Route, Routes } from 'react-router-dom';
 // component
-import Card from "./Card";
+import Home from './component/Home';
+import Todolist from './component/Todolist';
 // style
 import './App.css';
 
 const App = () => {
     return (
         <div className="app-main">
-            <Card name="John Edward" age={33} gender="male" position="Web Developer" />
-            <Card name="Edward" age={33} gender="male" position="UI Designer" />
-            <Card name="John" age={33} gender="male" position="Quality Assurance" />
-            <Card name="Ed" age={33} gender="male" position="Graphic Artist" />
-            <Card name="Janjan" age={33} gender="male" position="Computer Technician" />
+            <Routes>
+                <Route path='/home' element={<Home/>} />
+                <Route path='/todolist' element={<Todolist/>} />
+                <Route path='/' element={<Home/>} />
+            </Routes>
         </div>
     )
 }
